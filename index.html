@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PolicyFit - Underwriting Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>PolicyFit - Underwriting Checker</h1>
+    <form id="illnessForm">
+      <label for="illnessInput">Enter Illnesses (comma separated):</label>
+      <input type="text" id="illnessInput" placeholder="e.g., colon cancer, diabetes"/>
+      <label for="fileInput">Or Upload Medical Document (PDF/Text/Image):</label>
+      <input type="file" id="fileInput" accept=".pdf,.txt,.png,.jpg,.jpeg" />
+      <button type="submit">Check Status</button>
+    </form>
+    <div id="resultArea"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
